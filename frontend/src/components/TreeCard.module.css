@@ -1,0 +1,88 @@
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  border: var(--glass-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.header {
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rootName {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.badgeDim, .badgeErr {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.badgeDim {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-dim);
+}
+
+.badgeErr {
+  background: rgba(248, 113, 113, 0.1);
+  color: var(--error);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.nodeWrapper {
+  margin-left: 0.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.node {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nodeDot {
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--primary-glow);
+}
+
+.nodeKey {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.children {
+  margin-top: 0.25rem;
+}
+
+.cycleMsg {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
