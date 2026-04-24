@@ -8,7 +8,7 @@ const EXAMPLE = 'A->B, A->C, B->D, C->E, E->F, X->Y, Y->Z, Z->X, P->Q, Q->R, G->
 
 export default function App() {
   const [input, setInput] = useState('');
-  const [apiUrl, setApiUrl] = useState('http://localhost:3000/bfhl');
+  const [apiUrl, setApiUrl] = useState('https://bfhl-ten-lemon.vercel.app/_/backend/bfhl');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [result, setResult] = useState(null);
